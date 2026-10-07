@@ -10,10 +10,11 @@ Create one fictional, self-contained task prompt that resembles the user's recur
 
 ## Review session history
 
-1. Use the current host's supported session-history or conversation-search tools to review up to the 20 most recent prior sessions. Review fewer if fewer are available.
-2. Inspect enough of each accessible session to understand the user's requested work. Do not treat repeated messages in one session as separate sessions.
-3. If the host cannot expose prior sessions, say so plainly and ask the user to provide session exports or summaries. Do not imply access to hidden history, search unrelated local files for transcripts, or invent evidence.
-4. Extract only generalized task patterns. Do not reproduce private code, project or customer names, credentials, personal data, or distinctive content from past sessions in the generated prompt.
+1. Use the current host's supported session-history or conversation-search tools to find up to 20 recent prior sessions. Include archived sessions when the tool supports it. Review fewer if fewer are available.
+2. Read enough of each session to understand the user's requested work. Track how many sessions were listed, how many had readable conversations, and how many were actually reviewed. Do not treat repeated messages in one session as separate sessions.
+3. If available, use a supported VS Code session-history or Chronicle command/tool to find recent chats missing from the host's session list or transcript results. Chronicle may be experimental or disabled; use it only when the current host exposes it. Never inspect VS Code's internal databases or files directly.
+4. If history is incomplete, report exactly what was accessible. If a supported Chronicle/history feature is available but disabled, explain how the user can enable or run it and provide a query they can use to produce a concise summary. Otherwise, ask for session exports or summaries. Do not imply access to hidden history or invent evidence.
+5. Extract only generalized task patterns. Do not reproduce private code, project or customer names, credentials, personal data, or distinctive content from past sessions in the generated prompt.
 
 ## Choose a representative task pattern
 
