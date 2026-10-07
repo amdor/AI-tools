@@ -1,0 +1,18 @@
+{
+  "name": "ai-tools-marketplace",
+  "description": "Public Agent Skills from AI-tools",
+  "owner": {
+    "name": "amdor"
+  },
+  "plugins": [
+    {
+      "name": "ai-tools",
+      "source": {
+        "source": "git-subdir",
+        "url": "amdor/AI-tools",
+        "path": "."
+      },
+      "description": "A collection of portable AI workflow skills."
+    }
+  ]
+}

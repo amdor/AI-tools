@@ -1,0 +1,7 @@
+{
+  "name": "ai-tools",
+  "version": "1.0.0",
+  "description": "A collection of portable AI workflow skills.",
+  "repository": "https://github.com/amdor/AI-tools",
+  "license": "Apache-2.0"
+}
